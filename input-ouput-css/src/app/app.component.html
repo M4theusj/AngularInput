@@ -1,0 +1,9 @@
+<app-text-overflow></app-text-overflow>
+<router-outlet></router-outlet>
+<app-aleatorio
+  [valorMin]="1"
+  [valorMax]="10"
+  (resultado)="processar($event)"
+></app-aleatorio>
+
+<p>{{resultado}}</p>
